@@ -26,7 +26,7 @@ RSpec.configure do |config|
 end
 
 def create_pdf(klass=Prawn::Document)
-  @pdf = klass.new(:margin => 0)
+  @pdf = klass.new(:margin => 0, :page_layout => :landscape)
 end    
 
 # Make some methods public to assist in testing

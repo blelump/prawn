@@ -490,6 +490,7 @@ module Prawn
         end
 
         def render_rotated(text)
+          puts "RENDER ROTATE WRONG"
           unprinted_text = ''
 
           case @rotate_around

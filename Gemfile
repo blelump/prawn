@@ -16,3 +16,8 @@ group :test do
   gem "mocha", :require => false
   gem "rake"
 end
+
+group :test, :development do
+  gem 'pry'
+  gem 'pry-debugger'
+end
