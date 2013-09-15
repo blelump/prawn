@@ -50,7 +50,7 @@ module Prawn
           # The height available at this point in the box
           #
           def available_height
-            puts "available_height:\t@width: #{@width}\t@height: #{@height}"
+#            puts "available_height:\t@width: #{@width}\t@height: #{@height}"
             if @rotate != 0 && 
               ((@rotate > 45 && @rotate < 135) || (@rotate > 225 && @rotate < 315))
               @width
@@ -64,8 +64,8 @@ module Prawn
           def draw_fragment(fragment, accumulated_width=0, line_width=0, word_spacing=0) #:nodoc:
             # require 'pry'
             # binding.pry
-            puts "draw_fragment accumulated_width: #{accumulated_width} line_width: #{line_width}"
-            puts "\t@width: #{@width}\t@height: #{@height}"
+#            puts "draw_fragment accumulated_width: #{accumulated_width} line_width: #{line_width}"
+#            puts "\t@width: #{@width}\t@height: #{@height}"
             case(@align)
             when :left
               x = @at[0]
@@ -111,7 +111,7 @@ module Prawn
 
           def render_rotated(text)
             unprinted_text = ''
-puts "RENDER ROTATE: #{@at.inspect}\t#{text}"
+#puts "RENDER ROTATE: #{@at.inspect}\t#{text}"
             x = @at[0] + @height/2.0 - 1.0
             y = @at[1] - @height/2.0 + 4.0
 
